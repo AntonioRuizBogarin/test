@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>
+Tabla de multiplicar del 100
+PARA IMPRIMIR
+</title>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&subset=latin&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto&subset=latin&display=swap">
+
+<!-- async CSS -->
+<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&subset=latin&display=swap">
+<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css?family=Roboto&subset=latin&display=swap">
+
+<!-- no-JS fallback -->
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&subset=latin&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&subset=latin&display=swap">
+</noscript>
+
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&subset=latin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&subset=latin&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="https://tablas.top/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://tablas.top/favicon.ico" type="image/x-icon">
+<meta name="description" 
+content="
+La tabla de multiplicar del 100 completa hasta 100. Aprende fácil, practica y memoriza. Perfecta para niños.
+">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  max-width: 70ch;
+  line-height: 1.75;
+  font-size: 1.05em;
+color: #000019;
+font-family: 'Roboto';
+text-align: center;
+margin:auto;
+}
+img{
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+border-radius: 30px;
+}
+br {
+  font-size:2px;
+  line-height: 2px;
+}
+h1 {
+font-family: 'Comic Neue';
+  font-weight: bold;
+  font-size: 1.75em;
+padding: 0;
+margin: 0;
+border: 0;
+}
+.container {
+align:center;
+}
+  table {  
+display: inline-table;
+    width: 20em;
+    margin: 5px;
+  }
+  #htmlContent{
+    text-align: center;
+  }  
+  td, th{    
+    text-align: center;  
+font-family: consolas, courier, monospaced;
+width:7em; 
+  }  
+
+
+table {
+    border-spacing: 0;
+  }
+th:first-child {
+    border-radius: 6px 0 0 0;
+  }
+
+  th:last-child {
+    border-radius: 0 6px 0 0;
+  }
+
+ 
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 14px;
+    -webkit-box-shadow: 0 1px 1px #ccc; 
+    -moz-box-shadow: 0 1px 1px #ccc; 
+    box-shadow: 0 1px 1px #ccc;         
+}
+    
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    padding: 10px;   
+}
+
+.bordered th {
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:    -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:     -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:      -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image:         linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 14px 0 0 0;
+    -webkit-border-radius: 14px 0 0 0;
+    border-radius: 14px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 14px 0 0;
+    -webkit-border-radius: 0 14px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 14px;
+    -webkit-border-radius: 0 0 0 14px;
+    border-radius: 0 0 0 14px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 14px 0;
+    -webkit-border-radius: 0 0 14px 0;
+    border-radius: 0 0 14px 0;
+}
+
+
+ input{  
+    border: 1px solid #dddddd;  
+    text-align: left;  
+    padding: 6px;  
+    border: 2px solid black;
+text-transform:uppercase;
+color: #004e07;
+font-weight: bold;
+border-radius: 25px;
+margin: 5px;
+
+  } 
+  tr:nth-child(even) {  
+    background-color: #dddddd;  
+  }  
+</style>  
+<style type="text/css" media="print">
+input,p, button, img {display: none;}
+table{vertical-align: middle;}
+</style>
+</head>
+<div id="htmlContent">
+<h1>
+Tabla del 100
+</h1>
+<p>Ver <a style="color:blue;text-decoration: underline;" onclick="location.href='https://timestable.net/100'">lista completa hasta 'x 100'</a></p>
+<table  class="bordered">
+<tbody>
+<tr>
+<td> 100 × 1 = 100</td>
+<td> 100 × 6 = 600</td>
+</tr>
+<tr>
+<td> 100 × 2 = 200</td>
+<td> 100 × 7 = 700</td>
+</tr>
+<tr>
+<td> 100 × 3 = 300</td>
+<td> 100 × 8 = 800</td>
+</tr>
+<tr>
+<td> 100 × 4 = 400</td>
+<td> 100 × 9 = 900</td>
+</tr>
+<tr>
+<td> 100 × 5 = 500</td>
+<td> 100 × 10 = 1000</td>
+</tr>
+</tbody>
+</table>
+<table  class="bordered">
+<tbody>
+<tr>
+<td> 100 × 11 = 1100</td>
+<td> 100 × 16 = 1600</td>
+</tr>
+<tr>
+<td> 100 × 12 = 1200</td>
+<td> 100 × 17 = 1700</td>
+</tr>
+<tr>
+<td> 100 × 13 = 1300</td>
+<td> 100 × 18 = 1800</td>
+</tr>
+<tr>
+<td> 100 × 14 = 1400</td>
+<td> 100 × 19 = 1900</td>
+</tr>
+<tr>
+<td> 100 × 15 = 1500</td>
+<td> 100 × 20 = 2000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</br>
+<form><input type="button" name="Imprimir" value="Imprimir tabla" onclick="window.print();"></form>
+<p>Ver <a href="https://tablasdemultiplicar.net">tablas de multiplicar</a> de otros números</p>
+ <img src="https://tablas.top/tablas-multiplicar-imprimir.webp" loading="lazy" width="640" height="452" alt="tabla-multiplicar-imprimir" > 
+<p>La tabla del 100 muestra 100 multiplicado por cada número hasta cien. Es decir, el resultado de sumar 100 veces un número. Conocer esta tabla de multiplicación es lo idóneo para efectuar operaciones rápidamente sin realizar varias sumas. </p>
+<p>Tablas de multiplicar para imprimir o copiar y pegar. Completa hasta 100. Aprende fácil, practica y memoriza. Perfecta para niños en edad escolar y otros estudiantes. La tabla del cien.</p>
+</html>
+
+<span style="display:none">
+100
+</span>
